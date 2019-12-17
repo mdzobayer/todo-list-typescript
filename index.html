@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="module" src="dist/script.js"></script>
+</head>
+
+<body>
+    <h3>Todo List</h3>
+    <div id="list"></div>
+    <div>
+        <input type="text" id="item" placeholder="Enter task name" />
+        <input type="button" onclick="AddItem()" value="Add">
+        <input type="button" onclick="PrintList()" value="Refresh list">
+    </div>
+    <div>
+        Find with index
+        <input type="text" id="index" placeholder="Enter an index (0 based)">
+        <input type="button" onclick="FindItem()" value="Find">
+    </div>
+    Result:
+    <div id="result"></div>
+
+</body>
+
+</html>
