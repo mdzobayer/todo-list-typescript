@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type="module" src="dist/script.js"></script>
+    <script type="text/javascript" src="dist/List.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
 </head>
 
 <body>
@@ -14,13 +15,13 @@
     <div id="list"></div>
     <div>
         <input type="text" id="item" placeholder="Enter task name" />
-        <input type="button" onclick="AddItem()" value="Add">
-        <input type="button" onclick="PrintList()" value="Refresh list">
+        <input type="button" onclick="main.AddItem()" value="Add">
+        <input type="button" onclick="main.PrintList()" value="Refresh list">
     </div>
     <div>
         Find with index
         <input type="text" id="index" placeholder="Enter an index (0 based)">
-        <input type="button" onclick="FindItem()" value="Find">
+        <input type="button" onclick="main.FindItem()" value="Find">
     </div>
     Result:
     <div id="result"></div>
